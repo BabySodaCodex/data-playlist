@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Playlist</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
-  </head>
-  <body>
-    <main>
-      <h1>My Playlist</h1>
-      <p>Songs from a chart, served by an API I deployed myself.</p>
-    </main>
-    <script src="script.js"></script>
+console.log("Hello World");
+	
+	
+ async function loadSongs() {
+  let response = await fetch("https://YOUR-API.workers.dev/api/v1/datasets/viral-50-usa/records?limit=10");
+  let data = await response.json();
+  let songs = data.records;
+
+  console.log(songs); 
+  
+  
   </body>
 </html>
+
+
+}
