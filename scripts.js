@@ -24,5 +24,3 @@ function showSong() {
 button.addEventListener("click", function () {
   loadSongs();
 });
-
-
